@@ -1,0 +1,132 @@
+
+/* Reset */
+*,
+*::after,
+*::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    border:none;
+    list-style: none;
+}
+/* Root */
+:root{
+    --color-button: #219F95;
+    --color-header-number: #AFCEDD;
+    --color-body:#FFFFFF;
+    --color-text-light:#696969;
+    --color-text-dark: #1E1E1E;
+    --color-heder-text: #234894;
+    --button-shadow:0px 8px 15px rgba(0, 0, 0, 0.1);
+    --border-radius-small: 5px;
+    --border-radius-big: 8px;
+    --font-size-small:1.2rem;
+    --font-size-medium:1.4rem;
+    --font-size-big:1.6rem;
+    --font-size-verybig:1.8rem;
+   
+}
+html{
+    font-size: 62.5%;
+}
+/* Body */
+*,
+body{
+    font-family:"Vazir FD";
+}
+/* Frame */
+.container{
+    background-color:var(--color-body);
+    padding:15px 9%;
+    padding-bottom: 100px;
+}
+h1{
+    text-align: right;
+    font-weight:800;
+    padding:50px ;
+    padding-bottom: 10px;
+    color:var(--color-text-dark);
+    font-size: var(--font-size-verybig);
+}
+
+.box__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+}
+
+.box{
+   
+    border-radius: var(--border-radius-big);
+    background: var(--color-body);
+    text-align: right;
+    padding:30px 40px;
+}
+
+/* Text Body */
+.text{
+    font-size: var(--font-size-big);
+    font-weight: 700;
+}
+
+.num__header{
+    font-size: var(--font-size-verybig);
+    padding: 10px 15px;
+    color: var(--color-heder-text);
+    background-color:var(--color-header-number) ;
+    border-radius: var(--border-radius-small);
+  
+}
+.txt__header{
+    color:var(--color-heder-text);
+    padding: 5px;
+}
+.txt__date{
+    padding-right:120px;
+    font-size: var(--font-size-small);
+    font-weight: 500;
+    color: var(--color-text-light);
+}
+.membership--request{
+    padding-top: 2rem;
+    font-size: var(--font-size-verybig);
+    font-weight: 800;
+}
+.request--id{
+    padding-top: 0.5rem;
+    font-size: var(--font-size-small);
+    font-weight: 500;
+    color: var(--color-text-light);
+}
+.profile{
+    padding-bottom:0.2rem;
+    margin-bottom: -1rem; 
+    height: 40px;
+    width: 40px;
+}
+.profile--name{
+    padding-left: 30px;
+    font-size: var(--font-size-verybig);
+    font-weight: 700;
+
+}
+/* button */
+.btn--ruqest{
+    display: inline-block;
+    cursor: pointer;
+    height: 64px;
+    width: 150px;
+    text-align: center;
+    border-radius: var(--border-radius-big);
+    background:var(--color-button);
+    color:var(--color-body);
+    box-shadow: var(--button-shadow);
+
+}
+/* Screen*/
+@media screen and (max-width:768px){
+    .container{
+        padding:15px; 
+    }
+}
